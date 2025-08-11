@@ -16,7 +16,6 @@ We evaluate **Multi-RAG** on **MMBench-Video**, a long-form video QA benchmark w
 - **Main comparison:** At **0.5 fps**, Multi-RAG is **comparable to GPT-4o@1 fps** overall (2.14 vs. 2.15) and **stronger on Reasoning** (2.21 vs. 2.08).
 - **Ablations:** Removing **audio** hurts most; removing **auxiliary metadata** also degrades performance; removing **both** yields the lowest score.
 - **Retrieval top-k:** Best overall at **top-5**; diminishing returns at **top-7**.
-- **Approx. API cost:** **$482** for the full experiment.
 
 ## Reproduction Outline
 1. **Prepare data:** download MMBench-Video and generate (a) 1 fps frame descriptions, (b) 0.5 fps by alternation, and (c) ASR transcripts; append **auxiliary summaries** when enabled.
