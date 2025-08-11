@@ -28,6 +28,5 @@ We evaluate **Multi-RAG** on **MMBench-Video**, a long-form video QA benchmark w
 - **Ablation (Prompt-2):** Full 2.12; −Audio 2.03; −Aux 2.10; −Audio&Aux 2.01 (overall means).
 - **Top-k sweep (Overall):** k=1: 1.92; k=3: 2.04; **k=5: 2.12**; k=7: 2.10.
 
-## Generated text based source files
-
+## Generated video analysis files
 Download from https://huggingface.co/datasets/Maoger/Multi-RAG-MMBench/tree/main
