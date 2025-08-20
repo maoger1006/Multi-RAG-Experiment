@@ -2,7 +2,7 @@
 
 **Paper:** [Multi-RAG: A Multimodal Retrieval-Augmented Generation System for Adaptive Video Understanding](https://arxiv.org/abs/2505.23990)
 
-## Benchmark
+# Benchmark / Results
 We evaluate **Multi-RAG** on **MMBench-Video**, a long-form video QA benchmark with **609** clips across **16** categories (30 s–6 min) and **1,998** QA pairs. It assesses both **Perception** and **Reasoning** via a 3-level capability taxonomy (e.g., CP, FP-S, FP-C, HL, LR, AR, RR, CSR, TR).
 
 ## Evaluation Protocol
@@ -23,10 +23,9 @@ We evaluate **Multi-RAG** on **MMBench-Video**, a long-form video QA benchmark w
 3. **Inference:** use the RAG agent to answer QA items under each setting (with/without audio, with/without auxiliary metadata; 1 fps vs. 0.5 fps).
 4. **Scoring:** grade with GPT-4 per the benchmark’s semantic-similarity rubric.
 
-## Reported Numbers (for reference)
-- **Overall/Reasoning means** (Multi-RAG, 0.5 fps, Prompt-1): **2.14 / 2.21**; (Prompt-2): **2.12 / 2.14**.
-- **Ablation (Prompt-2):** Full 2.12; −Audio 2.03; −Aux 2.10; −Audio&Aux 2.01 (overall means).
-- **Top-k sweep (Overall):** k=1: 1.92; k=3: 2.04; **k=5: 2.12**; k=7: 2.10.
+
+# Quick Start
+
 
 ## Generated video analysis files
 Download from https://huggingface.co/datasets/Maoger/Multi-RAG-MMBench/tree/main
